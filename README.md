@@ -1,16 +1,151 @@
-# React + Vite
+# React Redux Ecommerce Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple e-commerce application built using React, Redux Toolkit, and React Router. The application includes user authentication, product listing, category filtering, pagination, cart management, and checkout functionality.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* User Authentication using DummyJSON API
+* JWT Token Storage in Local Storage
+* Product Listing from API
+* Category-wise Product Filtering
+* Product Pagination
+* Add to Cart Functionality
+* Cart Item Count
+* Checkout Page
+* Total Price Calculation
+* Remove Product from Cart
+* Logout Functionality
+* Redux Toolkit State Management
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Redux Toolkit
+* React Router DOM
+* JavaScript
+* Vite
+* DummyJSON API
 
-## Expanding the ESLint configuration
+## APIs Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Authentication API
+
+```text
+https://dummyjson.com/auth/login
+```
+
+Products API
+
+```text
+https://dummyjson.com/products
+```
+
+Categories API
+
+```text
+https://dummyjson.com/products/categories
+```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Navigate to the project directory:
+
+```bash
+cd ecommerce-app
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the application:
+
+```bash
+npm run dev
+```
+
+## Login Credentials
+
+```text
+Username: emilys
+Password: emilyspass
+```
+
+## Project Structure
+
+```text
+src
+├── app
+├── components
+├── features
+│   ├── auth
+│   ├── cart
+│   └── products
+├── pages
+├── App.jsx
+└── main.jsx
+```
+
+## Functionality
+
+### Authentication
+
+* Login using DummyJSON authentication API
+* JWT token stored in local storage
+* Error handling for invalid credentials
+
+### Product Management
+
+* Fetch products from API
+* Display products
+* Filter by category
+* Pagination support
+
+### Cart Management
+
+* Add products to cart
+* Remove products from cart
+* Display cart count
+* Calculate total cart value
+
+### Checkout
+
+* Display selected products
+* Display total items
+* Display total price
+
+## Screenshots
+
+### Login Page
+![Login Page](src/Images/Screenshot%202026-06-08%20123526.png)
+
+### Products Page
+
+![Products Page](src/Images/Screenshot%202026-06-08%20123903.png)
+
+### Pagination
+
+![Pagination](src/Images/Screenshot%202026-06-08%20123927.png)
+
+### Checkout Page
+
+![Checkout](src/Images/Screenshot%202026-06-08%20123939.png)
+
+## Future Improvements
+
+* Product search functionality
+* Product details page
+* Quantity management in cart
+* Responsive UI with a component library
+
+## Author
+
+Ayushman Sharma
